@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>task</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  background-color: floralwhite;
+  overflow-x: hidden;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 75px;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav i{
+margin: 0px 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 10px;}
+}
+a.active{
+	background-color: #9090de;
+}
+.header{
+	height: 70px;
+	width: 100%;
+	background-color: whitesmoke;
+	margin: -7px;
+}
+.main{
+	right: 100px;
+	top: 80px;
+	margin: 10px 10px;
+}
+h2{
+	color: black;
+	margin: 25px 160px;
+	font-size: 15px;
+}
+#homepage{
+	margin: -5px 350px;
+	width: 70%;
+	height: 25px;
+	
+}
+#upload{
+	margin: 0px 350px;
+	width: 100px;
+	height: 100px;
+	border: 2px solid white;
+	background-color: #FAE8ED;
+	box-sizing: border-box;
+}
+#upload p{
+	margin-top: 40px;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#student"><i class="fa fa-user-circle"></i><br>Students</a>
+  <a href="#lessonplan" class="active"><i class="fa fa-book" aria-hidden="true"></i>Lesson Plan</a>
+  <a href="#settings"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
+</div>
+   <div class="header">
+   	<i class="fa fa-snowflake-o" style="font-size:36px"></i>
+   </div>
+   <div class="main">
+   <h2>	&#9664;Videos</h2>
+    <input type="url" id="homepage" name="homepage" placeholder="Insert URL here">
+    <p style="text-align:center;margin: 25px 10px;">or</p>
+    <div id="upload"><p style="text-align: center;">Upload</p></div>
+   </div>
+</body>
+</html> 
